@@ -35,6 +35,7 @@ class LLaMA_Chatbot():
         return input_text
 
     def start_chat(self):
+        print("----------------------------------------------------------------------------")
         print("""This is a chatbot create using the Huggingface opensource LLaMA 7B model, you can type in
 break to stop the chatbot or restart to restart the chatbot conversation""")
         # Start the chatbot
