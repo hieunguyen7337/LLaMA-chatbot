@@ -2,7 +2,7 @@ from transformers import LLaMATokenizer, LLaMAForCausalLM, GenerationConfig
 
 class LLaMA_Chatbot():
     def __init__(self):
-        Initialize the tokenizer, model configuration and model using the GPT2 pre-trained model from Hugging Face Transformers
+        # Initialize the tokenizer, model configuration and model using the GPT2 pre-trained model from Hugging Face Transformers
         self.tokenizer = LLaMATokenizer.from_pretrained("./LLaMa-7B-model") 
         self.model = LLaMAForCausalLM.from_pretrained("./LLaMa-7B-model",
                                                       load_in_8bit=True,
